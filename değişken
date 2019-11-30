@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main()
+ {
+  int sayac1=0;
+  float x, n=1;
+  float sayi1;
+float k=sayi1;
+  float b;
+  float y;
+ 
+  cout<<"Toplam sembolundeki x degiskenini giriniz\t";
+  cin>>x;
+ 
+  sayi1=(3*n)+4;
+  k=(3*n)+4;
+  while(sayac1!=x)
+  {
+sayac1++;
+sayi1 = sayi1+3; if(sayac1==x-1) break;
+ 
+  }
+  b = (sayi1 + k) *x;
+  y = b/2;
+  cout<<y;
+
+ }
