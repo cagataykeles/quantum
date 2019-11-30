@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int sayac=0;
+
+float k , c ,f;
+float direnc, direnc1 ;
+
+
+int adet;
+char tur;
+cout<<"kac adet direnc girmek isityorsunuz?\t";
+cin>>adet;
+cout<<"direnclerin baglanma turunu giriniz\t('s'),('p')";
+cin>>tur;
+
+if(tur=='s')
+{cout<<"direnci gir\t";
+cin>>direnc;
+while(sayac!=adet)
+{
+
+cout<<"direnci gir\t";
+cin>>direnc1;
+sayac++;
+direnc = direnc + direnc1; if(sayac==adet-1) break;
+
+}
+cout<<direnc<<endl;
+}
+
+ else if(tur=='p')
+{cout<<"direnci gir\t";
+cin>>direnc;
+k=1/direnc;
+while(sayac!=adet)
+{
+sayac++;
+cout<<"direnci gir\t";
+cin>>direnc1;
+c =1/direnc1;
+k = k + c; if(sayac==adet-1) break;
+
+}
+
+}
+else
+{cout<<"hatali kodalama yaptiniz";
+}
+
+f=1/k;
+cout<<f;
+
+}
