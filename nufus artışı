@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+float art;
+float nufus;
+float yil;
+int sayac1=0;
+float b;
+
+cout<<"lutfen sehrinizin nufusunu giriniz\t";
+cin>>nufus;
+
+cout<<"\n\nLutfen nufus artis oraninizin yuzdesini giriniz\t";
+cin>>art;
+
+
+cout<<"\n\n\nKac yil sonrasini hesaplamak istiyorsunuz?\t";
+cin>>yil;
+
+while(sayac1!=yil)
+{b = nufus * (art/100);
+nufus= nufus + b;
+sayac1 = sayac1 + 1;
+
+}
+cout<<"Hedeflenen  nufusunuz ="<<nufus;
+
+}
+
+
